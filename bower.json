@@ -1,0 +1,23 @@
+{
+  "name": "codeprint",
+  "version": "0.0.0",
+  "description": "Auto-generate markup examples for your styleguide",
+  "main": "dist/codeprint.js",
+  "author": {
+    "name": "Ben Browning",
+    "email": "ben@bright-interactive.co.uk"
+  },
+  "repository": {
+    "url": "https://github.com/benbrowning/codeprint.git",
+    "type": "git"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
