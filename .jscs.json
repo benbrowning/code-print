@@ -144,12 +144,12 @@
   "disallowMixedSpacesAndTabs": "smart",
   "safeContextKeyword": "self",
 
-  "validateIndentation": 2,
+  "validateIndentation": 4,
 
   "requireYodaConditions": true,
 
   "requireSpaceAfterLineComment": true,
-  
+
   "excludeFiles": ["node_modules/**", "app/bower_components/**" ]
 
 }
