@@ -19,5 +19,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "chai": "~1.9.2",
+    "jquery": "~2.1.1"
+  }
 }
