@@ -1,26 +1,14 @@
+/* global codePrint */
+
 var assert = chai.assert,
     expect = chai.expect,
     should = chai.should(); // Note that should has to be executed
 
-
 codePrint.init();
 
+
 describe('CodePrint', function() {
-
-
-    // describe('init', function() {
-    //     it('should work with assert', function() {
-    //         assert.equal(foobar.sayHello(), 'Hello World!');
-    //     });
-
-    //     it('should work with expect', function() {
-    //         expect(foobar.sayHello()).to.equal('funky chicken!');
-    //     });
-
-    //     it('should work with should', function() {
-    //         foobar.sayHello().should.equal('funky chicken!');
-    //     });
-    // });
+    'use strict';
 
     describe('getSourceCode', function() {
 
@@ -34,6 +22,32 @@ describe('CodePrint', function() {
             expect(codePrint.getSourceCode($elem, true)).to.equal('<h3>Whitespace</h3>')
         });
 
+    });
+
+    describe('trimWhitespace', function() {
+
+        it('should trim leading whitespace', function() {
+            expect(codePrint.trimWhitespace(' \t\t  Foo')).to.equal('Foo');
+        });
+
+        it('should trim trailing whitespace', function() {
+            expect(codePrint.trimWhitespace('Bar   \n')).to.equal('Bar');
+        });
+
+        it('should trim leading and trailing whitespace', function() {
+            expect(codePrint.trimWhitespace('     Foobar   \n')).to.equal('Foobar');
+        });
+
+    });
+
+    describe('getCodeBlockPanel', function() {
+
+        it('should return the correct html structure', function(){
+            var $html = codePrint.getCodeBlockPanel('<h3>Lorem</h3>');
+
+            expect($html.find('code.language-markup').length).to.equal(1);
+            $html.find('code').text().should.equal('<h3>Lorem</h3>');
+        });
     });
 
 });
