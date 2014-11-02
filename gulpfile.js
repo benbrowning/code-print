@@ -1,39 +1,46 @@
 /* global karma */
-var gulp = require('gulp');
-var karma = require('karma').server;
-var sass = require('gulp-sass');
+var gulp = require('gulp'),
+    karma = require('karma').server,
+    sass = require('gulp-sass'),
+    watch = require('gulp-watch')
 
 /**
  * Run test once and exit
  */
-gulp.task('test', function (done) {
-  'use strict';
-  karma.start({
-    configFile: __dirname + '/karma.conf.js',
-    singleRun: true
-  }, done);
-});
+// gulp.task('test', function (done) {
+//     'use strict';
+//     karma.start({
+//     configFile: __dirname + '/karma.conf.js',
+//     singleRun: true
+//     }, done);
+// });
 
 /**
  * Watch for file changes and re-run tests on each change
  */
-gulp.task('tdd', function (done) {
-  'use strict';
-  karma.start({
-    configFile: __dirname + '/karma.conf.js'
-  }, done);
-});
-
-gulp.task('default', ['tdd']);
-gulp.task('default', function() {
-  // place code for your default task here
-});
-
-var gulp = require('gulp');
+// gulp.task('tdd', function (done) {
+//   'use strict';
+//   karma.start({
+//     configFile: __dirname + '/karma.conf.js'
+//   }, done);
+// });
 
 
-gulp.task('sass', function () {
-    gulp.src('./pages/sass/*.scss')
+
+
+
+// gulp.task('default', function () {
+//     gulp.src('css/**/*.css')
+//         .pipe(watch('css/**/*.css', function(files) {
+//             return files.pipe(gulp.dest('./one/'));
+//         }))
+//         .pipe(gulp.dest('./two/'));
+//     // `one` and `two` will contain same files
+// });
+
+gulp.task('watch', function () {
+    watch('pages/sass/*.scss')
+        // .pipe(plumber())
         .pipe(sass())
-        .pipe(gulp.dest('./pages/css/'));
+        .pipe(gulp.dest('pages/css/'));
 });

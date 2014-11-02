@@ -365,8 +365,8 @@ html {
   /* [1] */
   line-height: 1.5;
   /* [1] */
-  background-color: #fff;
-  color: #333;
+  background-color: #F2E7C7;
+  color: #705051;
   overflow-y: scroll;
   /* [2] */
   min-height: 100%;
@@ -380,6 +380,63 @@ html {
   -webkit-font-smoothing: antialiased;
   /* [5] */ }
 
-section, header {
+header {
+  background: #72988D;
+  padding: 2em 0;
+  color: #F2E7C7; }
+
+.container {
   width: 80%;
   margin: 0 auto; }
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a, a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+     * Don't show links for images, or javascript/internal links
+     */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr, img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2, h3 {
+    page-break-after: avoid; }
+ }

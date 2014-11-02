@@ -1,5 +1,6 @@
 
 
+@import "base.settings";
 @import "bower_components/inuit-defaults/settings.defaults";
 
 @import "bower_components/inuit-functions/tools.functions";
@@ -8,5 +9,11 @@
 @import "bower_components/inuit-normalize/generic.normalize";
 @import "bower_components/inuit-box-sizing/generic.box-sizing";
 
+$inuit-base-background-color: $cream;
+$inuit-base-text-color: $brown;
 @import "bower_components/inuit-page/base.page";
 @import "base.layout";
+
+
+@import "print";
+
