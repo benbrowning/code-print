@@ -379,3 +379,7 @@ html {
   /* [5] */
   -webkit-font-smoothing: antialiased;
   /* [5] */ }
+
+section, header {
+  width: 80%;
+  margin: 0 auto; }
