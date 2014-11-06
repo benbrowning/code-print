@@ -1,5 +1,8 @@
 # codeprint
 
+[![browser support](https://ci.testling.com/benrowning/max-by.png)
+](https://ci.testling.com/benbrowning/max-by)
+
 [![Build Status](https://secure.travis-ci.org/benbrowning/codeprint.png?branch=master)](http://travis-ci.org/benbrowning/codeprint)
 
 Auto-generate markup examples for your styleguide.
