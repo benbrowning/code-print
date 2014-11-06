@@ -16,6 +16,19 @@
   "engines": {
     "node": ">= 0.10.0"
   },
+  "testling": {
+    "files": "test/test-max.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
   "devDependencies": {
     "karma": "~0.12.24",
     "mocha": "~2.0.1",
@@ -25,6 +38,10 @@
     "gulp": "~3.8.9",
     "gulp-sass": "~1.2.2",
     "gulp-autoprefixer": "~1.0.1",
-    "gulp-util": "~3.0.1"
+    "gulp-util": "~3.0.1",
+    "tape": "~3.0.2"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
   }
 }

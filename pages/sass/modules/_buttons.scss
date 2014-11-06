@@ -1,0 +1,21 @@
+// -----------------------------------------------
+//  Buttons
+// -----------------------------------------------
+
+.btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: #fff;
+        color: #ed8a65;
+        text-shadow: none;
+    }
+}
+
+

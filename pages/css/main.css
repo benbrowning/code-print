@@ -154,7 +154,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -268,8 +267,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -334,13 +331,9 @@ td, th {
  * paulirish.com/2012/box-sizing-border-box-ftw
  */
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
 /*------------------------------------*\
@@ -365,8 +358,8 @@ html {
   /* [1] */
   line-height: 1.5;
   /* [1] */
-  background-color: #F2E7C7;
-  color: #705051;
+  background-color: #fff;
+  color: #444;
   overflow-y: scroll;
   /* [2] */
   min-height: 100%;
@@ -381,13 +374,50 @@ html {
   /* [5] */ }
 
 header {
-  background: #72988D;
-  padding: 2em 0;
-  color: #F2E7C7; }
+  padding: 3em 0;
+  background-image: -webkit-linear-gradient(top, #98CABE 0%, #FF7D53 110%);
+  background-image: linear-gradient(to bottom, #98CABE 0%, #FF7D53 110%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #FF7D53; }
+  header h1 {
+    margin-top: 160px;
+    font-size: 60px; }
+  header p {
+    font-size: 22px; }
+
+h1, h2 {
+  font-family: 'Raleway', helvetica, sans-serif; }
+
+a {
+  color: #98CABE; }
 
 .container {
-  width: 80%;
+  width: 960px;
   margin: 0 auto; }
+
+section {
+  padding: 60px 0; }
+
+.section-blue {
+  border-top: 1px solid #B9DCC6;
+  background-image: -webkit-linear-gradient(top, #dbede2 -20%, #fff 50%);
+  background-image: linear-gradient(to bottom, #dbede2 -20%, #fff 50%); }
+
+.btn {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
+  .btn:hover {
+    background: #fff;
+    color: #ed8a65;
+    text-shadow: none; }
 
 /* ==========================================================================
    Print styles.
