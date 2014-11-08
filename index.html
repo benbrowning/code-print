@@ -14,7 +14,6 @@
 
 
         <link rel="stylesheet" href="pages/css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
 
@@ -43,13 +42,21 @@
                 <h2>Installation</h2>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
-                <h2>Usage</h2>
+                <h2>Quick Usage</h2>
 
                 <p>Include jquery and codeprint in your page:</p>
 
                 <p>If you want to render a code snippet of an element, then simply add the data-attribute <code>data-codeprint</code>. (Don't worry, codeprint will strip out this attribute from the markup example it generates).</p>
 
                 <p>If you want to render the markup for a group of elements then simply wrap in a div with the data attribute <code>data-codeprint-group</code>.</p>
+
+                <h2>Going deeper</h2>
+
+                <p>Codeprint has a number of configuration options, including the use of a custom template if you want to do something special with the markup that gets rendered.</p>
+                <p>The default html is thus:</p>
+
+                <a href="" data-codeprint class="btn">This is a button</a>
+
 
             </div>
 
@@ -58,6 +65,11 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="bower-components/jquery/dist/jquery.js"><\/script>')</script>
 
+        <script src="dist/codeprint.min.js"></script>
+        <script type="text/javascript">
+
+            codePrint.init();
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
