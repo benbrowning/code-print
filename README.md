@@ -6,7 +6,7 @@ Auto-generate markup examples for your styleguide.
 
 If you like to handcraft your styleguides, but don't like to handcraft the code examples then this script is for you.
 
-Similar to the excellent <a href="https://github.com/filamentgroup/X-rayHTML">xrayhtml</a>, except codeprint allows grouping of 
+Similar to the excellent <a href="https://github.com/filamentgroup/X-rayHTML">xrayhtml</a>.
 
 ## Installation
 
