@@ -14,6 +14,7 @@
 
 
         <link rel="stylesheet" href="pages/css/main.css">
+        <link rel="stylesheet" href="pages/css/prism.css">
     </head>
     <body>
 
@@ -55,7 +56,7 @@
                 <p>Codeprint has a number of configuration options, including the use of a custom template if you want to do something special with the markup that gets rendered.</p>
                 <p>The default html is thus:</p>
 
-                <a href="" data-codeprint class="btn">This is a button</a>
+                <a href="" data-codeprint class="test">This is a button</a>
 
 
             </div>
@@ -65,10 +66,15 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="bower-components/jquery/dist/jquery.js"><\/script>')</script>
 
-        <script src="dist/codeprint.min.js"></script>
+        <script src="lib/codeprint.js"></script>
+        <script src="pages/js/prism.js"></script>
         <script type="text/javascript">
 
-            codePrint.init();
+            codePrint.init({
+                onSuccess: function() {
+                    Prism.highlightAll();
+                }
+            });
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
