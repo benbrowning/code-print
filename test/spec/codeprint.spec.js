@@ -52,15 +52,13 @@ describe('CodePrint', function() {
 
     describe('callback function', function() {
 
-        it('should execute a callback function', function(){
+        it('should execute a callback function on init', function(){
             var foo = 'bar';
             var options = {
                 onComplete: function() {
                     foo = 'test';
                 }
             };
-
-            //spy on onComplete function and check it has been called
             codePrint.init(options);
             expect(foo).to.equal('test');
 
