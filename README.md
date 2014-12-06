@@ -6,7 +6,7 @@ Auto-generate markup examples for your styleguide.
 
 If you like to handcraft your styleguides, but don't like to handcraft the code examples then this script is for you.
 
-Similar to the excellent <a href="https://github.com/filamentgroup/X-rayHTML">xrayhtml</a>, though codeprint doesn't do any snazy flip to reveal shenanigans and requires you to write your own css styles.
+Similar to the excellent <a href="https://github.com/filamentgroup/X-rayHTML">xrayhtml</a>, though codeprint requires you to write your own css styles.
 
 ## Installation
 
@@ -54,8 +54,24 @@ If you want to use something like prism for syntax highlighting, then you can ge
 
 ## Roadmap
 
+- Improve the docs
 - Add templating to give more control on what markup codeprint will generate.
 
+
+
+## Development
+
+To run the tests:
+	
+	npm test
+	
+To run the tests everytime you change a js file:
+
+	npm watch	
+	
+To build the minified version:
+	
+	npm run build	
 
 
 ## License
