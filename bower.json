@@ -21,8 +21,6 @@
     "tests"
   ],
   "devDependencies": {
-    "chai": "~1.9.2",
     "jquery": "~2.1.1",
-    "sinon": "http://sinonjs.org/releases/sinon-1.11.0.js"
   }
 }
