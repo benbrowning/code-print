@@ -4,9 +4,6 @@ var assert = chai.assert,
     expect = chai.expect,
     should = chai.should(); // Note that should has to be executed
 
-codePrint.init();
-
-
 describe('CodePrint', function() {
     'use strict';
 
@@ -18,7 +15,7 @@ describe('CodePrint', function() {
         });
 
         it('should remove leading and trailing whitespace from grouped', function() {
-            var $elem = $('#wrapping-test');
+            var $elem = $('<div id="wrapping-test"><h3>Whitespace</h3></div>');
             expect(codePrint.getSourceCode($elem, true)).to.equal('<h3>Whitespace</h3>')
         });
 
