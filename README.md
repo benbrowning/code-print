@@ -27,8 +27,8 @@ Include the script on your page, along with jquery.
 
 Then, on DOM ready, you need to init codeprint with some options (both of which are optional): 
 
-    codeprint.init({
-        wrappingDivClass: 'sg-block'    // css class added to the rendered pre block
+    codePrint.init({
+        wrappingDivClass: 'sg-block',    // css class added to the rendered pre block
         onComplete: function() {
             // callback function in case you want to do anything else after the code 
             // snippets have been rendered (e.g. trigger some syntax highlighting).
@@ -49,8 +49,8 @@ If you would like to group the markup of a few components, then wrap the compone
 
 If you want to use something like prism for syntax highlighting, then you can get this going via the onComplete callback function that can be specified as part of the options.
 	
-    codeprint.init({
-        wrappingDivClass: 'sg-block'    // css class added to the rendered pre block
+    codePrint.init({
+        wrappingDivClass: 'sg-block',    // css class added to the rendered pre block
         onComplete: function() {
             Prism.highlightAll();
         }
