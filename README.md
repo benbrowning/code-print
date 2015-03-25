@@ -10,9 +10,13 @@ Similar to the excellent <a href="https://github.com/filamentgroup/X-rayHTML">xr
 
 ## Installation
 
-```
-$ npm install --save-dev codeprint
-```
+Download the <a href="https://raw.githubusercontent.com/benbrowning/code-print/master/dist/codeprint.min.js" target="_blank">minified script</a>
+
+
+
+## Dependencies
+
+Requires jQuery to be included on the page.
 
 ## Usage
 
@@ -54,7 +58,8 @@ If you want to use something like prism for syntax highlighting, then you can ge
 
 ## Roadmap
 
-- Improve the docs
+- Improve the docs.
+- Remove dependancy on jquery.
 - Add templating to give more control on what markup codeprint will generate.
 
 
