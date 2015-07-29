@@ -13,7 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 
-        <link rel="stylesheet" href="pages/css/main.css">
+        <link rel="stylesheet" href="pages/css/style.min.css">
         <link rel="stylesheet" href="pages/css/prism.css">
     </head>
     <body>
@@ -49,7 +49,33 @@
 
                 <p>If you want to render a code snippet of an element, then simply add the data-attribute <code>data-codeprint</code>. (Don't worry, codeprint will strip out this attribute from the markup example it generates).</p>
 
-                <p>If you want to render the markup for a group of elements then simply wrap in a div with the data attribute <code>data-codeprint-group</code>.</p>
+                <p>If you want to render the markup for a group of elements then simply wrap in a div with the data attribute <code>data-codeprint-group</code> (again, codeprint will strip this out of the generated markup example).</p>
+
+                <p>To initialise codeprint simply call its init function (it's best to do this on the dom-ready event):</p>
+                <pre>
+codeprint.init();
+                </pre>
+
+                <h2>Options</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>Default</th>
+                            <th>Description</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>wrappingDivClass</td>
+                            <td>'sg-block'</td>
+                            <td>The class that is used on the generated div that surrounds the element and its code sample.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
 
                 <h2>Going deeper</h2>
 

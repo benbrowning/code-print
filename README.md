@@ -14,7 +14,8 @@ This is the readme for the gh-pages branch, which contains a promotional site wi
 
 The website uses sass:
 
-    gulp watch
+    cd pages/css
+    ./watch
 
 Will listen for changes and recompile the css.
 
