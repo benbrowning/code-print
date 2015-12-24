@@ -2,7 +2,7 @@
   "name": "codeprint",
   "version": "0.1.0",
   "description": "Auto-generate markup examples for your styleguide",
-  "main": "dist/codeprint.js",
+  "main": "dist/codePrint.js",
   "readmeFilename": "README.md",
   "author": {
     "name": "Ben Browning",
@@ -28,6 +28,6 @@
   "scripts": {
     "test": "karma start --single-run",
     "watch": "karma start",
-    "build": "uglifyjs lib/codeprint.js -mc > dist/codeprint.min.js "
+    "build": "uglifyjs lib/codePrint.js -mc > dist/codePrint.min.js "
   }
 }
