@@ -1,6 +1,6 @@
 {
   "name": "codeprint",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Auto-generate markup examples for your styleguide",
   "main": "dist/codeprint.js",
   "readmeFilename": "README.md",
